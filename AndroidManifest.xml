@@ -1,0 +1,1239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    android:compileSdkVersion="34"
+    android:compileSdkVersionCodename="14"
+    package="com.milojiapp.live"
+    platformBuildVersionCode="34"
+    platformBuildVersionName="14"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Allows the app to create network sockets and use custom network protocols. The browser and other applications provide means to send data to the internet, so this permission is not required to send data to the internet. -->
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+    <!-- Allows the app to move tasks to the foreground and background. The app may do this without your input. -->
+    <uses-permission
+        android:name="android.permission.REORDER_TASKS" />
+    <!-- Allows the app to write the contents of your shared storage. -->
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <!-- Allows the app to read the contents of your shared storage. -->
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <!-- Allows the app to change the state of network connectivity. -->
+    <uses-permission
+        android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!-- Allows the app to view information about network connections such as which networks exist and are connected. -->
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- Allows the app to view information about Wi-Fi networking, such as whether Wi-Fi is enabled and name of connected Wi-Fi devices. -->
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- Allows the app to read audio files from your shared storage. -->
+    <uses-permission
+        android:name="android.permission.READ_MEDIA_AUDIO" />
+    <!-- This app can appear on top of other apps or other parts of the screen. This may interfere with normal app usage and change the way that other apps appear. -->
+    <uses-permission
+        android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- Allows the app to control the vibrator. -->
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+    <!-- Allows the app to connect to and disconnect from Wi-Fi access points and to make changes to device configuration for Wi-Fi networks. -->
+    <uses-permission
+        android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- Allows the app to prevent the phone from going to sleep. -->
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+    <!-- Allows the app to modify global audio settings such as volume and which speaker is used for output. -->
+    <uses-permission
+        android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <!-- Allows the app to have itself started as soon as the system has finished booting. This can make it take longer to start the phone and allow the app to slow down the overall phone by always running. -->
+    <uses-permission
+        android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission
+        android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <!-- Allows the app to show notifications -->
+    <uses-permission
+        android:name="android.permission.POST_NOTIFICATIONS" />
+    <!-- Allows the app to access the phone features of the device. This permission allows the app to determine the phone number and device IDs, whether a call is active, and the remote number connected by a call. -->
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+    <!-- This app can take pictures and record videos using the camera while the app is in use. -->
+    <uses-permission
+        android:name="android.permission.CAMERA" />
+    <!-- This app can record audio using the microphone while the app is in use. -->
+    <uses-permission
+        android:name="android.permission.RECORD_AUDIO" />
+    <!-- Allows the app to view the configuration of the Bluetooth on the phone, and to make and accept connections with paired devices. -->
+    <uses-permission
+        android:name="android.permission.BLUETOOTH"
+        android:maxSdkVersion="30" />
+    <!-- Allows the app to configure the local Bluetooth phone, and to discover and pair with remote devices. -->
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_ADMIN"
+        android:maxSdkVersion="30" />
+    <!-- Allows the app to control the vibrator. -->
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+    <uses-permission
+        android:name="android.permission.FLASHLIGHT" />
+    <!-- Allows the app to disable the keylock and any associated password security. For example, the phone disables the keylock when receiving an incoming phone call, then re-enables the keylock when the call is finished. -->
+    <uses-permission
+        android:name="android.permission.DISABLE_KEYGUARD" />
+    <!-- Allows the app to make use of foreground services. -->
+    <uses-permission
+        android:name="android.permission.FOREGROUND_SERVICE" />
+    <!-- Allows the user to purchase items through Google Play from within this app. -->
+    <uses-permission
+        android:name="com.android.vending.BILLING" />
+    <permission
+        android:name="com.milojiapp.live.permission.RECEIVE_MSG"
+        android:protectionLevel="signature" />
+    <uses-permission
+        android:name="com.milojiapp.live.permission.RECEIVE_MSG" />
+    <uses-permission
+        android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+    <uses-permission
+        android:name="com.milojiapp.live.wou" />
+    <queries
+        package="com.milojiapp.live">
+        <package
+            android:name="net.one97.paytm" />
+        <package
+            android:name="com.phonepe.app" />
+        <package
+            android:name="com.google.android.apps.nbu.paisa.user" />
+        <package
+            android:name="in.org.npci.upiapp" />
+        <package
+            android:name="com.upi.axispay" />
+        <package
+            android:name="com.bankofbaroda.upi" />
+        <package
+            android:name="com.freecharge.android" />
+        <package
+            android:name="com.enstage.wibmo.hdfc" />
+        <package
+            android:name="com.fampay.in" />
+        <package
+            android:name="com.mobikwik_new" />
+        <package
+            android:name="com.razorpay.payments.app" />
+        <package
+            android:name="com.bKash.customerapp" />
+        <package
+            android:name="com.konasl.nagad" />
+        <package
+            android:name="pk.com.telenor.phoenix" />
+        <package
+            android:name="com.techlogix.mobilinkcustomer" />
+        <package
+            android:name="com.oplus.ocs" />
+        <package
+            android:name="com.coloros.ocs" />
+        <intent>
+            <action
+                android:name="android.media.action.IMAGE_CAPTURE" />
+        </intent>
+        <intent>
+            <action
+                android:name="android.media.action.ACTION_VIDEO_CAPTURE" />
+        </intent>
+        <package
+            android:name="com.facebook.katana" />
+        <intent>
+            <action
+                android:name="com.android.vending.billing.InAppBillingService.BIND" />
+        </intent>
+    </queries>
+    <uses-feature
+        android:glEsVersion="0x20000"
+        android:required="true" />
+    <!-- Allows the app to end background processes of other apps. This may cause other apps to stop running. -->
+    <uses-permission
+        android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <permission
+        android:name="com.milojiapp.live.goldeneye.permission.PROCESS_SUPERVISOR"
+        android:protectionLevel="signature" />
+    <uses-permission
+        android:name="com.milojiapp.live.goldeneye.permission.PROCESS_SUPERVISOR" />
+    <!-- Allows apps to accept cloud to device messages sent by the app's service. Using this service will incur data usage. Malicious apps could cause excess data usage. -->
+    <uses-permission
+        android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <!-- Allows a publisher app to access a valid advertising ID directly or indirectly. -->
+    <uses-permission
+        android:name="com.google.android.gms.permission.AD_ID" />
+    <!-- Allows the app to retrieve its install referrer information. -->
+    <uses-permission
+        android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+    <permission
+        android:name="com.milojiapp.live.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:protectionLevel="signature" />
+    <uses-permission
+        android:name="com.milojiapp.live.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+    <uses-permission
+        android:name="com.sec.android.provider.badge.permission.READ" />
+    <uses-permission
+        android:name="com.sec.android.provider.badge.permission.WRITE" />
+    <uses-permission
+        android:name="com.htc.launcher.permission.READ_SETTINGS" />
+    <uses-permission
+        android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" />
+    <uses-permission
+        android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+    <uses-permission
+        android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" />
+    <uses-permission
+        android:name="com.anddoes.launcher.permission.UPDATE_COUNT" />
+    <uses-permission
+        android:name="com.majeur.launcher.permission.UPDATE_BADGE" />
+    <uses-permission
+        android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+    <uses-permission
+        android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission
+        android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission
+        android:name="android.permission.READ_APP_BADGE" />
+    <uses-permission
+        android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+    <uses-permission
+        android:name="com.oppo.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission
+        android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+    <uses-permission
+        android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
+    <uses-permission
+        android:name="com.asus.msa.SupplementaryDID.ACCESS" />
+    <uses-permission
+        android:name="com.asus.permission.READ_SDID_PROVIDER" />
+    <uses-permission
+        android:name="freemme.permission.msa" />
+    <application
+        android:theme="@style/t12"
+        android:label="Miloji Lite"
+        android:icon="@mipmap/fnd"
+        android:name="a.b.c.aa"
+        android:allowBackup="false"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:extractNativeLibs="true"
+        android:networkSecurityConfig="@xml/h0l"
+        android:roundIcon="@mipmap/fns"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:requestLegacyExternalStorage="true">
+        <uses-native-library
+            android:name="libOpenCL.so"
+            android:required="false" />
+        <activity
+            android:theme="@style/t15"
+            android:name="com.milojiapp.live.internal.activity.SplashActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.MAIN" />
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.VIEW" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:scheme="app"
+                    android:host="com.milojiapp.live"
+                    android:path="/splash" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.milojiapp.live.internal.activity.user.UserTopIdolRankActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.milojiapp.live.internal.activity.user.UserTopFansRankActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.milojiapp.live.internal.activity.me.FeedbackActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.milojiapp.live.internal.activity.message.CallHistoryActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.milojiapp.live.internal.activity.me.AnchorDailyIncomeActivity"
+            android:exported="true" />
+        <meta-data
+            android:name="design_width_in_dp"
+            android:value="360" />
+        <meta-data
+            android:name="design_height_in_dp"
+            android:value="640" />
+        <meta-data
+            android:name="android.notch_support"
+            android:value="true" />
+        <meta-data
+            android:name="notch.config"
+            android:value="portrait|landscape" />
+        <meta-data
+            android:name="BUGLY_APPID"
+            android:value="0bc13a265e" />
+        <meta-data
+            android:name="BUGLY_ENABLE_DEBUG"
+            android:value="false" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/rvk" />
+        <meta-data
+            android:name="com.facebook.sdk.ClientToken"
+            android:value="@string/rv6" />
+        <activity
+            android:theme="@style/trz"
+            android:label="@string/rsw"
+            android:name="com.facebook.FacebookActivity"
+            android:exported="false"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" />
+        <activity
+            android:name="com.milojiapp.live.internal.helper.test.ActivityLeakMaker$LeakedActivity" />
+        <activity
+            android:name="com.milojiapp.live.MainActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.milojiapp.live.internal.activity.login.UserBaseInfoActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.milojiapp.live.internal.activity.login.UserInterestingActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.milojiapp.live.internal.activity.login.UserAvatarActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.milojiapp.live.internal.activity.me.UserLanguageChangeActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.milojiapp.live.internal.activity.me.GalleryActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.milojiapp.live.internal.activity.me.GoodAvatarCaseActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.milojiapp.live.internal.activity.me.UserInfoChangeActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.milojiapp.live.internal.activity.user.UserInfoVideoActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.milojiapp.live.internal.activity.user.UserQueryActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:theme="@style/t5p"
+            android:name="com.milojiapp.live.thirdlib.agora_ui.activity.CallBackActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.milojiapp.live.internal.activity.user.UserContentShowActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.milojiapp.live.internal.activity.me.SettingActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.milojiapp.live.internal.activity.me.SwitchAccountActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.milojiapp.live.internal.activity.me.UserNameChangeActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.milojiapp.live.internal.activity.me.UserIntroChangeActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.milojiapp.live.internal.activity.me.UserOccupationChangeActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.milojiapp.live.internal.activity.me.BlockListActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.milojiapp.live.internal.activity.me.FollowActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.milojiapp.live.internal.activity.me.InviteActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.milojiapp.live.internal.activity.login.WebComInfoActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:theme="@style/tu7"
+            android:name="com.milojiapp.live.internal.activity.NotificationTransparentActivity"
+            android:exported="false" />
+        <activity
+            android:theme="@style/tu7"
+            android:name="com.milojiapp.live.internal.activity.pay.PayCodeActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.milojiapp.live.thirdlib.nimsdk.activity.ChatActivity"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.milojiapp.live.thirdlib.agora_ui.activity.CallNewActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.milojiapp.live.thirdlib.agora_ui.activity.FakeCallActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:theme="@style/t5p"
+            android:name="com.milojiapp.live.thirdlib.agora_ui.activity.CallServerActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.milojiapp.live.internal.activity.me.AboutActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.milojiapp.live.internal.activity.debug.DatingUpActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.milojiapp.live.internal.activity.VipCardActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.milojiapp.live.internal.activity.pay.PaymentActivity"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.milojiapp.live.internal.activity.user.UserDynamicShowActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.milojiapp.live.internal.update.ForceUpdateActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.milojiapp.live.internal.activity.login.UserProfileActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.milojiapp.live.internal.fragment.fakematch.FakeMatchActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.milojiapp.live.internal.activity.video.VideoFlowingActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:theme="@style/tu7"
+            android:name="com.milojiapp.live.internal.activity.PayActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.milojiapp.live.internal.activity.MatchRandomActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.milojiapp.live.internal.activity.task.TaskActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.milojiapp.live.internal.controller.PayResultActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.milojiapp.live.internal.activity.me.BeautySettingsActivity"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.milojiapp.live.internal.activity.WebGameActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <service
+            android:name="com.netease.nimlib.service.NimService"
+            android:exported="false"
+            android:process=":core" />
+        <service
+            android:name="com.netease.nimlib.service.NimService$Aux"
+            android:exported="false"
+            android:process=":core" />
+        <service
+            android:name="com.netease.nimlib.job.NIMJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="true"
+            android:process=":core" />
+        <receiver
+            android:name="com.netease.nimlib.service.NimReceiver"
+            android:exported="false"
+            android:process=":core">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.BOOT_COMPLETED" />
+                <action
+                    android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action
+                    android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.milojiapp.live.thirdlib.agora_ui.receiver.IncomingCallReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver>
+        <provider
+            android:name="com.netease.nimlib.ipc.cp.provider.PreferenceContentProvider"
+            android:exported="false"
+            android:authorities="com.milojiapp.live.ipc.provider.preference" />
+        <receiver
+            android:name="com.netease.nimlib.service.ResponseReceiver"
+            android:exported="false" />
+        <service
+            android:name="com.netease.nimlib.service.ResponseService"
+            android:exported="false" />
+        <provider
+            android:name="com.netease.nimlib.ipc.NIMContentProvider"
+            android:exported="false"
+            android:process=":core"
+            android:authorities="com.milojiapp.live.ipc.provider" />
+        <service
+            android:name="com.milojiapp.live.thirdlib.fcm.DatingFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action
+                    android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.milojiapp.live.internal.service.NotifyService"
+            android:exported="false" />
+        <service
+            android:name="com.netease.nimlib.mixpush.fcm.FCMTokenService"
+            android:exported="true">
+            <intent-filter>
+                <action
+                    android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <receiver
+            android:name="com.milojiapp.live.internal.receiver.NotifyReceiver"
+            android:exported="false" />
+        <receiver
+            android:name="com.milojiapp.live.thirdlib.nimsdk.broadcast.NimNotificationBroadcast"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action
+                    android:name="action_nim_notification" />
+            </intent-filter>
+        </receiver>
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/rxm" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@mipmap/frp" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/bdg" />
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:authorities="com.milojiapp.live.fileProvider"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/h0f" />
+        </provider>
+        <activity
+            android:name="com.milojiapp.live.internal.activity.WebActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.milojiapp.live.internal.activity.search.SearchActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.milojiapp.live.internal.activity.bag.MyBagActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.milojiapp.live.internal.activity.user.UserGiftWallActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <receiver
+            android:name="com.google.android.gms.analytics.CampaignTrackingReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action
+                    android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+        <service
+            android:name="com.google.android.gms.analytics.CampaignTrackingService"
+            android:enabled="true"
+            android:exported="false" />
+        <activity
+            android:name="com.milojiapp.live.lib_earn.activity.EarnActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.milojiapp.live.lib_earn.activity.WithdrawListActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.milojiapp.live.lib_earn.activity.EarnDetailActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.milojiapp.live.lib_earn.activity.RecordDetailActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.milojiapp.live.lib_earn.activity.MonthStatusActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.milojiapp.live.lib_earn.activity.CashInstructionActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.milojiapp.live.lib_earn.activity.AnchorFansActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.milojiapp.live.lib_earn.activity.WithdrawActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.milojiapp.live.lib_earn.activity.AnchorWeekOnlineActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.milojiapp.live.lib_earn.web.WithdrawWebActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:theme="@style/t8m"
+            android:name="com.milojiapp.live.live.liveroom.LiveRoomActivity"
+            android:exported="false"
+            android:taskAffinity="com.milojiapp.live.live"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:autoRemoveFromRecents="true"
+            android:supportsPictureInPicture="true" />
+        <activity
+            android:name="com.milojiapp.live.live.pushroom.PushRoomActivity"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.milojiapp.live.live.pushroom.ui.LiveCallEndActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <meta-data
+            android:name="com.netease.nim.uikit.support.glide.NIMGlideModule"
+            android:value="GlideModule" />
+        <activity
+            android:theme="@style/tel"
+            android:label="@string/ep9"
+            android:name="com.netease.nim.uikit.business.session.activity.WatchVideoActivity"
+            android:exported="false"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:theme="@style/tel"
+            android:name="com.netease.nim.uikit.business.session.activity.WatchMessagePictureActivity"
+            android:exported="false"
+            android:configChanges="keyboardHidden" />
+        <activity
+            android:theme="@style/tel"
+            android:name="com.netease.nim.uikit.business.session.activity.WatchPicAndVideoMenuActivity"
+            android:exported="false"
+            android:configChanges="keyboardHidden" />
+        <provider
+            android:name="com.netease.nim.uikit.common.media.model.GenericFileProvider"
+            android:exported="false"
+            android:authorities="com.milojiapp.live.generic.file.provider"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/h0j" />
+        </provider>
+        <activity
+            android:name="com.milojiapp.ext.ui.login.LoginActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.milojiapp.ext.ui.login.NewLoginActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.milojiapp.ext.ui.login.PhoneLoginActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.milojiapp.ext.ui.code.CodeActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.milojiapp.ext.ui.login.PolicyWebActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/pn0" />
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false" />
+        <provider
+            android:name="com.luck.picture.lib.PictureFileProvider"
+            android:exported="false"
+            android:authorities="com.milojiapp.live.provider"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/h0w" />
+        </provider>
+        <activity
+            android:theme="@style/tu7"
+            android:name="com.luck.picture.lib.PictureSelectorActivity"
+            android:exported="false"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="com.luck.picture.lib.PictureSelectorWeChatStyleActivity"
+            android:exported="false"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:theme="@style/t4c"
+            android:name="com.luck.picture.lib.PictureSelectorCameraEmptyActivity"
+            android:exported="false"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="com.luck.picture.lib.PictureCustomCameraActivity"
+            android:exported="false"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="com.luck.picture.lib.PicturePreviewActivity"
+            android:exported="false"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="com.luck.picture.lib.PictureSelectorPreviewWeChatStyleActivity"
+            android:exported="false"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="com.luck.picture.lib.PictureVideoPlayActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="com.luck.picture.lib.PictureExternalPreviewActivity"
+            android:exported="false"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:theme="@style/ta1"
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:exported="false" />
+        <activity
+            android:theme="@style/ta1"
+            android:name="com.yalantis.ucrop.PictureMultiCuttingActivity"
+            android:exported="false" />
+        <provider
+            android:name="com.milojiapp.lib.statistics.ipc.StatisticsProvider"
+            android:exported="false"
+            android:authorities="com.milojiapp.live.StatisticsProvider" />
+        <provider
+            android:name="com.milojiapp.lib.cloudconfig.ipc.CloudConfigProvider"
+            android:exported="false"
+            android:multiprocess="false"
+            android:authorities="com.milojiapp.live.CloudConfigProvider" />
+        <meta-data
+            android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule"
+            android:value="GlideModule" />
+        <activity
+            android:theme="@style/tuk"
+            android:name="com.miloji.pay2.deeplink.DeeplinkPayActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboard|keyboardHidden|orientation" />
+        <activity
+            android:theme="@style/t41"
+            android:name="com.miloji.pay2.web.WebActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboard|keyboardHidden|orientation" />
+        <activity
+            android:theme="@style/t41"
+            android:name="com.miloji.pay2.kyc.KYCActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboard|keyboardHidden|orientation" />
+        <activity
+            android:theme="@style/t41"
+            android:name="com.miloji.pay2.web.WebPayActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboard|keyboardHidden|orientation" />
+        <activity
+            android:theme="@style/tuk"
+            android:name="com.miloji.pay2.simple.SimplePayActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboard|keyboardHidden|orientation" />
+        <activity
+            android:theme="@style/t41"
+            android:name="com.miloji.pay2.card.option.CardOptionActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboard|keyboardHidden|orientation" />
+        <activity
+            android:theme="@style/t41"
+            android:name="com.miloji.pay2.card.CardActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:theme="@style/t41"
+            android:name="com.miloji.pay2.wallets.WalletsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboard|keyboardHidden|orientation" />
+        <activity
+            android:theme="@style/t41"
+            android:name="com.miloji.pay2.netbanking.NetBankingActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboard|keyboardHidden|orientation" />
+        <activity
+            android:theme="@style/t41"
+            android:name="com.miloji.pay2.upi.UpiClientActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboard|keyboardHidden|orientation" />
+        <activity
+            android:theme="@style/t41"
+            android:name="com.miloji.pay2.main.PayNativeActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboard|keyboardHidden|orientation" />
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:enabled="true"
+            android:exported="false"
+            android:authorities="com.milojiapp.live.androidx-startup">
+            <meta-data
+                android:name="com.social.gppay.GpPayInitializer"
+                android:value="@string/rsh" />
+            <meta-data
+                android:name="com.sfhw.webyap.WebInitializer"
+                android:value="@string/rsh" />
+            <meta-data
+                android:name="com.sfhw.gptran.GPTranInitializer"
+                android:value="@string/rsh" />
+            <meta-data
+                android:name="com.sfhw.mtpnosdk.MtpNoSdkInitializer"
+                android:value="@string/rsh" />
+            <meta-data
+                android:name="com.sfhw.fcweb.FCWebInitializer"
+                android:value="@string/rsh" />
+            <meta-data
+                android:name="com.sfhw.ipu.IPUInitializer"
+                android:value="@string/rsh" />
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup" />
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup" />
+            <meta-data
+                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+                android:value="androidx.startup" />
+        </provider>
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:exported="false"
+            android:directBootAware="true" />
+        <service
+            android:name="com.kwai.koom.javaoom.monitor.analysis.HeapAnalysisService"
+            android:process=":heap_analysis" />
+        <activity
+            android:theme="@style/tu4"
+            android:name="com.miloji.pay1.web.WebActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboard|keyboardHidden|orientation" />
+        <activity
+            android:theme="@style/tu4"
+            android:name="com.miloji.pay1.kyc.KYCActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboard|keyboardHidden|orientation" />
+        <activity
+            android:theme="@style/tuk"
+            android:name="com.miloji.pay1.simple.SimpleActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboard|keyboardHidden|orientation" />
+        <activity
+            android:theme="@style/tu4"
+            android:name="com.miloji.pay1.card.option.CardOptionActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboard|keyboardHidden|orientation" />
+        <activity
+            android:theme="@style/tu4"
+            android:name="com.miloji.pay1.card.CardActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:theme="@style/tu4"
+            android:name="com.miloji.pay1.walts.WaltsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboard|keyboardHidden|orientation" />
+        <activity
+            android:theme="@style/tu4"
+            android:name="com.miloji.pay1.nb.NBActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboard|keyboardHidden|orientation" />
+        <activity
+            android:theme="@style/tu4"
+            android:name="com.miloji.pay1.ipu.IpuClientActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboard|keyboardHidden|orientation" />
+        <activity
+            android:theme="@style/tu4"
+            android:name="com.miloji.pay1.main.NativeActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboard|keyboardHidden|orientation" />
+        <activity
+            android:theme="@style/tep"
+            android:label=""
+            android:name="pub.devrel.easypermissions.AppSettingsDialogHolderActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.facebook.CustomTabMainActivity" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.VIEW" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:scheme="fbconnect"
+                    android:host="cct.com.milojiapp.live" />
+            </intent-filter>
+        </activity>
+        <service
+            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+            android:exported="true"
+            android:visibleToInstantApps="true" />
+        <receiver
+            android:name="com.google.android.gms.analytics.AnalyticsReceiver"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.google.android.gms.analytics.AnalyticsService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.google.android.gms.analytics.AnalyticsJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.google.firebase.components.ComponentDiscoveryService"
+            android:exported="false"
+            android:directBootAware="true">
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.auth.ktx.FirebaseAuthKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.messaging.ktx.FirebaseMessagingKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.remoteconfig.ktx.FirebaseRemoteConfigKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+        </service>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+            android:exported="true"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.VIEW" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:scheme="genericidp"
+                    android:host="firebase.auth"
+                    android:path="/" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+            android:exported="true"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.VIEW" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:scheme="recaptcha"
+                    android:host="firebase.auth"
+                    android:path="/" />
+            </intent-filter>
+        </activity>
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND"
+            android:exported="true">
+            <intent-filter>
+                <action
+                    android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </receiver>
+        <service
+            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+            android:exported="false"
+            android:directBootAware="true">
+            <intent-filter
+                android:priority="-500">
+                <action
+                    android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:exported="false"
+            android:authorities="com.milojiapp.live.firebaseinitprovider"
+            android:initOrder="100"
+            android:directBootAware="true" />
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:enabled="true"
+            android:exported="false" />
+        <provider
+            android:name="com.facebook.internal.FacebookInitProvider"
+            android:exported="false"
+            android:authorities="com.milojiapp.live.FacebookInitProvider" />
+        <receiver
+            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action
+                    android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action
+                    android:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+            android:permission="android.permission.DUMP"
+            android:enabled="true"
+            android:exported="true"
+            android:directBootAware="false">
+            <intent-filter>
+                <action
+                    android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+            </intent-filter>
+            <intent-filter>
+                <action
+                    android:name="androidx.profileinstaller.action.SKIP_FILE" />
+            </intent-filter>
+            <intent-filter>
+                <action
+                    android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+            </intent-filter>
+            <intent-filter>
+                <action
+                    android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+            </intent-filter>
+        </receiver>
+        <meta-data
+            android:name="com.google.android.play.billingclient.version"
+            android:value="6.0.1" />
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.android.billingclient.api.ProxyBillingActivity"
+            android:exported="false"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" />
+        <service
+            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+            android:exported="false">
+            <meta-data
+                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+                android:value="cct" />
+        </service>
+        <service
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false" />
+        <receiver
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+            android:exported="false" />
+        <meta-data
+            android:name="com.huawei.hms.client.service.name:ads-identifier"
+            android:value="ads-identifier:3.4.28.313" />
+        <meta-data
+            android:name="com.huawei.hms.client.service.name:ads-installreferrer"
+            android:value="ads-installreferrer:3.4.28.313" />
+        <provider
+            android:name="com.just.agentweb.AgentWebFileProvider"
+            android:exported="false"
+            android:authorities="com.milojiapp.live.AgentWebFileProvider"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/h0x" />
+        </provider>
+        <activity
+            android:theme="@style/trn"
+            android:name="com.just.agentweb.ActionActivity"
+            android:exported="false"
+            android:launchMode="standard"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+    </application>
+</manifest>
